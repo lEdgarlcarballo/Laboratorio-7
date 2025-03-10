@@ -40,9 +40,6 @@ public:
 			saldo -= monto;
 			cout << "El retiro de: "<< monto <<"Q fue exitoso." << endl;
 			cout << "Su saldo actual es de: " << saldo << endl;
-			if (saldo <= 100) {
-				cout << "Advertencia el saldo de su cuenta es inferior a 100Q" << endl; // advertencia por bajo saldo
-			}
 		}
 		else {
 			cout << "La cantidad a retirar debe ser menor al saldo actual de su cuenta." << endl;
