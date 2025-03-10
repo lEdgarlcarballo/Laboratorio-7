@@ -21,8 +21,19 @@ public:
 
 	void depositar(double monto) {
 		if (activa) {
-
+			if (monto > 0) {
+				saldo += monto;
+				cout << "El dinero se a cargado a su cuenta correctamente." << endl;
+				cout << "Su saldo actual es de: " << saldo << endl;
+			}
+			else {
+				cout << "El valor de la cantidad a ingresar tiene que ser positivo!" << endl;
+			}
 		}
+		else {
+			cout << "Tienes que tener una cuenta activa para poder realizar esta accion." << endl;
+		}
+		
 	}
 
 
